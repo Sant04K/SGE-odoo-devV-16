@@ -23,8 +23,11 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/sge_agenciaviajes_viaje.tree.xml',
-        'views/sge_agenciaviajes_destino.tree.xml',
+
+    #Importante que el "menus.xml" esté antes que las vistas para que se creen los menús correctamente
+        'views/sge_agenciaviajes_menus.xml',
+        'views/sge_agenciaviajes_viaje.xml',
+        'views/sge_agenciaviajes_destino.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
