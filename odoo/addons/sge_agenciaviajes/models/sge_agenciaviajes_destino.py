@@ -1,4 +1,7 @@
-class sge_agenciaviajes_destino(models.Model):
+#-*- coding: utf-8 -*-
+from odoo import models, fields
+
+class Destino(models.Model):
     
     # AQUÍ ES DONDE MANTIENES EL NOMBRE TÉCNICO DEL MODELO RECUERDA EL .DESTINO
     _name = 'sge_agenciaviajes.destino'
