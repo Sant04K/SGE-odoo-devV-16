@@ -7,10 +7,9 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="destino"/>
-                    <field name="precio"/>
-                    <field name="fecha_inicio"/>
-                    <field name="state" widget="badge"/>
+                    <field name="pais"/>
+                    <field name="ciudad"/>
+                    <field name="imagen"/>
                 </tree>
             </field>
         </record>
@@ -27,36 +26,16 @@
                         <group>
                             <group>
                                 <field name="name"/>
-                                <field name="destino"/>
+                                <field name="pais"/>
+                                <field name="ciudad"/>
                             </group>
                             <group>
-                                <field name="precio"/>
-                                <field name="fecha_inicio"/>
-                                <field name="fecha_fin"/>
+                                <field name="imagen"/>
                             </group>
                         </group>
                     </sheet>
                 </form>
             </field>
         </record>
-
-
-        <record id="action_sge_agenciaviajes_viaje" model="ir.actions.act_window">
-            <field name="name">Gestión de Viajes</field>
-            <field name="res_model">sge_agenciaviajes.viaje</field> 
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_sge_agenciaviajes_viaje_tree"/>            
-        </record>
-
-        <menuitem id="menu_sge_agenciaviajes_root" 
-                  name="Agencia Viajes" 
-                  sequence="10"/>
-
-        <menuitem id="menu_sge_agenciaviajes_viaje" 
-                  name="Gestión de Viajes" 
-                  parent="menu_sge_agenciaviajes_root" 
-                  action="action_sge_agenciaviajes_viaje" 
-                  sequence="10"/>
-
     </data>
 </odoo>
