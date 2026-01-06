@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sge_agenciaviajes_viaje,sge_agenciaviajes.viaje,model_sge_agenciaviajes_viaje,base.group_user,1,1,1,1
+access_itinerario,sge_agenciaviajes.itinerario,model_sge_agenciaviajes_itinerario,base.group_user,1,1,1,1
