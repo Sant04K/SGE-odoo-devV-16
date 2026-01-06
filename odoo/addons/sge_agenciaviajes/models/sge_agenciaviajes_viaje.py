@@ -6,7 +6,7 @@ class Viaje(models.Model):
     _name = 'sge_agenciaviajes.viaje'
     _description = 'Gestion de Viajes'
 
-    name = fields.Char(string='Nombre', required=True)
+    name = fields.Char(string='Nombre', help="Introducir nombre del viaje", required=True)
     precio = fields.Float(string='Precio')
     destino = fields.Char(string='Destino') 
     
