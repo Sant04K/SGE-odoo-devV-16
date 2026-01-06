@@ -15,7 +15,7 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.2',
+    'version': '0.3',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -24,6 +24,7 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
     'data': [
         'security/ir.model.access.csv',
         'views/sge_agenciaviajes_viaje.tree.xml',
+        'views/sge_agenciaviajes_destino.tree.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
