@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_sge_agenciaviajes_viaje_tree" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.viaje.tree</field>
-            <field name="model">sge_agenciaviajes.viaje</field>
+        <record id="view_sge_agenciaviajes_destino" model="ir.ui.view">
+            <field name="name">sge_agenciaviajes.destino</field>
+            <field name="model">sge_agenciaviajes.destino</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -14,14 +14,11 @@
             </field>
         </record>
 
-        <record id="view_sge_agenciaviajes_viaje_form" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.viaje.form</field>
-            <field name="model">sge_agenciaviajes.viaje</field>
+        <record id="view_sge_agenciaviajes_destino_form" model="ir.ui.view">
+            <field name="name">sge_agenciaviajes.destino.form</field>
+            <field name="model">sge_agenciaviajes.destino</field>
             <field name="arch" type="xml">
                 <form string=" ">
-                    <header>
-                        <field name="state" widget="statusbar" clickable="True"/>
-                    </header>
                     <sheet>
                         <group>
                             <group>
@@ -37,5 +34,18 @@
                 </form>
             </field>
         </record>
+
+        <record id="action_sge_agenciaviajes_destino" model="ir.actions.act_window">
+            <field name="name">Gestión de Destinos</field>
+            <field name="res_model">sge_agenciaviajes.destino</field> 
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_sge_agenciaviajes_destino"/>
+        </record>
+        <menuitem id="menu_sge_agenciaviajes_destino" 
+                  name="Gestión de Destinos" 
+                  parent="menu_sge_agenciaviajes_root" 
+                  action="action_sge_agenciaviajes_destino" 
+                  sequence="20"/>
+    
     </data>
 </odoo>

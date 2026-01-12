@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_sge_agenciaviajes_viaje_tree" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.viaje.tree</field>
+        <record id="view_sge_agenciaviajes_viaje" model="ir.ui.view">
+            <field name="name">sge_agenciaviajes.viaje</field>
             <field name="model">sge_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
                 <tree>
@@ -45,7 +45,7 @@
             <field name="name">Gestión de Viajes</field>
             <field name="res_model">sge_agenciaviajes.viaje</field> 
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_sge_agenciaviajes_viaje_tree"/>            
+            <field name="view_id" ref="view_sge_agenciaviajes_viaje"/>            
         </record>
 
         <menuitem id="menu_sge_agenciaviajes_root" 
