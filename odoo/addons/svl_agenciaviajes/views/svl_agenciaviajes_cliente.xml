@@ -42,7 +42,7 @@
                                     <field name="destino_id"/>
                                     <field name="fecha_inicio"/>
                                     <field name="fecha_fin"/>
-                                    <field name="precio"/>
+                                    <field name="precio_base"/>
                                     <field name="state" widget="badge"/>
                                 </tree>
                             </field>
