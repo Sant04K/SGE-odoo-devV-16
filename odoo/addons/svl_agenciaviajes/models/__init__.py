@@ -2,3 +2,4 @@
 
 from . import svl_agenciaviajes_viaje
 from . import svl_agenciaviajes_destino
+from . import svl_agenciaviajes_cliente

@@ -28,6 +28,7 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
         'views/svl_agenciaviajes_menu.xml',
         'views/svl_agenciaviajes_viaje.xml',
         'views/svl_agenciaviajes_destino.xml',
+        'views/svl_agenciaviajes_cliente.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

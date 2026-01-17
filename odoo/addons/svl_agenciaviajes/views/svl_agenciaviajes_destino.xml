@@ -18,7 +18,7 @@
             <field name="name">svl_agenciaviajes.destino.form</field>
             <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">
-                <form string=" ">
+                <form string="Destino">
                     <sheet>
                         <group>
                             <group>

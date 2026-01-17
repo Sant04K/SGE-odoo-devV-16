@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <record id="view_svl_agenciaviajes_cliente_tree" model="ir.ui.view">
+        <field name="name">svl.agenciaviajes.cliente.tree</field>
+        <field name="model">svl_agenciaviajes.cliente</field>
+        <field name="arch" type="xml">
+            <tree string="Clientes">
+                <field name="name"/>
+                <field name="viaje_count" string="Nº Viajes"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_svl_agenciaviajes_cliente_form" model="ir.ui.view">
+        <field name="name">svl.agenciaviajes.cliente.form</field>
+        <field name="model">svl_agenciaviajes.cliente</field>
+        <field name="arch" type="xml">
+            <form string="Cliente">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="%(action_svl_agenciaviajes_viaje)d" 
+                                type="action" 
+                                class="oe_stat_button" 
+                                icon="fa-plane"
+                                context="{'search_default_cliente_id': active_id}">
+                            <field name="viaje_count" widget="statinfo" string="Viajes"/>
+                        </button>
+                    </div>
+
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Viajes del Cliente" name="viajes">
+                            <field name="viaje_ids">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="destino_id"/>
+                                    <field name="fecha_inicio"/>
+                                    <field name="fecha_fin"/>
+                                    <field name="precio"/>
+                                    <field name="state" widget="badge"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_svl_agenciaviajes_cliente" model="ir.actions.act_window">
+        <field name="name">Clientes</field>
+        <field name="res_model">svl_agenciaviajes.cliente</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea tu primer cliente
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_svl_agenciaviajes_clientes" 
+              name="Clientes" 
+              parent="menu_svl_agenciaviajes_root" 
+              action="action_svl_agenciaviajes_cliente" 
+              sequence="20"/>
+    </data>
+</odoo>

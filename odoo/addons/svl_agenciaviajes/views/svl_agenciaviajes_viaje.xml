@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <!-- Recuerda que mejor _ para nombres de vistas -->
         <record id="view_svl_agenciaviajes_viaje_tree" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.viaje</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="destino"/>
                     <field name="precio"/>
+                    <field name="destino_id"/>
                     <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>
                     <field name="state" widget="badge"/>
                 </tree>
             </field>
@@ -20,7 +20,7 @@
             <field name="name">svl_agenciaviajes.viaje.form</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
-                <form string=" ">
+                <form string="Viaje">
                     <header>
                         <field name="state" widget="statusbar" clickable="True"/>
                     </header>
@@ -28,7 +28,7 @@
                         <group>
                             <group>
                                 <field name="name"/>
-                                <field name="destino"/>
+                                <field name="destino_id"/>
                             </group>
                             <group>
                                 <field name="precio"/>
