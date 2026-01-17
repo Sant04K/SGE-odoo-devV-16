@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <menuitem id="menu_sge_agenciaviajes_root" 
+        <menuitem id="menu_svl_agenciaviajes_root" 
                   name="Agencia Viajes" 
                   sequence="10"/>
     </data>

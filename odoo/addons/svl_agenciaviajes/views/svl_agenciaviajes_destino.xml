@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_sge_agenciaviajes_destino" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.destino</field>
-            <field name="model">sge_agenciaviajes.destino</field>
+        <record id="view_svl_agenciaviajes_destino_tree" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.destino</field>
+            <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
                     <field name="pais"/>
                     <field name="ciudad"/>
-                    <field name="imagen"/>
+                    <field name="imagen" widget="image" options='{"size": [100, 100]}'/>
                 </tree>
             </field>
         </record>
 
-        <record id="view_sge_agenciaviajes_destino_form" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.destino.form</field>
-            <field name="model">sge_agenciaviajes.destino</field>
+        <record id="view_svl_agenciaviajes_destino_form" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.destino.form</field>
+            <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">
                 <form string=" ">
                     <sheet>
@@ -35,16 +35,17 @@
             </field>
         </record>
 
-        <record id="action_sge_agenciaviajes_destino" model="ir.actions.act_window">
-            <field name="name">Gestión de Destinos</field>
-            <field name="res_model">sge_agenciaviajes.destino</field> 
+        <record id="action_svl_agenciaviajes_destino" model="ir.actions.act_window">
+            <field name="name">Destinos posibles</field>
+            <field name="res_model">svl_agenciaviajes.destino</field> 
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_sge_agenciaviajes_destino"/>
+            <field name="view_id" ref="view_svl_agenciaviajes_destino_tree"/>
         </record>
-        <menuitem id="menu_sge_agenciaviajes_destino" 
-                  name="Gestión de Destinos" 
-                  parent="menu_sge_agenciaviajes_root" 
-                  action="action_sge_agenciaviajes_destino" 
+        
+        <menuitem id="menu_svl_agenciaviajes_destino" 
+                  name="Destinos" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_destino" 
                   sequence="20"/>
     
     </data>

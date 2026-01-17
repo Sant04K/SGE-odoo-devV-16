@@ -3,7 +3,7 @@ from odoo import models, fields
 
 
 class Viaje(models.Model):
-    _name = 'sge_agenciaviajes.viaje'
+    _name = 'svl_agenciaviajes.viaje'
     _description = 'Gestion de Viajes'
 
     name = fields.Char(string='Nombre', help="Introducir nombre del viaje", required=True)

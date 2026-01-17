@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_sge_agenciaviajes_viaje" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.viaje</field>
-            <field name="model">sge_agenciaviajes.viaje</field>
+        <!-- Recuerda que mejor _ para nombres de vistas -->
+        <record id="view_svl_agenciaviajes_viaje_tree" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.viaje</field>
+            <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -15,9 +16,9 @@
             </field>
         </record>
 
-        <record id="view_sge_agenciaviajes_viaje_form" model="ir.ui.view">
-            <field name="name">sge_agenciaviajes.viaje.form</field>
-            <field name="model">sge_agenciaviajes.viaje</field>
+        <record id="view_svl_agenciaviajes_viaje_form" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.viaje.form</field>
+            <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
                 <form string=" ">
                     <header>
@@ -41,21 +42,21 @@
         </record>
 
 
-        <record id="action_sge_agenciaviajes_viaje" model="ir.actions.act_window">
+        <record id="action_svl_agenciaviajes_viaje" model="ir.actions.act_window">
             <field name="name">Gestión de Viajes</field>
-            <field name="res_model">sge_agenciaviajes.viaje</field> 
+            <field name="res_model">svl_agenciaviajes.viaje</field> 
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_sge_agenciaviajes_viaje"/>            
+            <field name="view_id" ref="view_svl_agenciaviajes_viaje_tree"/>            
         </record>
 
-        <menuitem id="menu_sge_agenciaviajes_root" 
+        <menuitem id="menu_svl_agenciaviajes_root" 
                   name="Agencia Viajes" 
                   sequence="10"/>
 
-        <menuitem id="menu_sge_agenciaviajes_viaje" 
+        <menuitem id="menu_svl_agenciaviajes_viaje" 
                   name="Gestión de Viajes" 
-                  parent="menu_sge_agenciaviajes_root" 
-                  action="action_sge_agenciaviajes_viaje" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_viaje" 
                   sequence="10"/>
 
     </data>

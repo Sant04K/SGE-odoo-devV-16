@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sge_agenciaviajes",
+    'name': "svl_agenciaviajes",
 
     'summary': "Gestiona una agencia de viajes",
 
@@ -25,9 +25,9 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
         'security/ir.model.access.csv',
 
     #Importante que el "menus.xml" esté antes que las vistas para que se creen los menús correctamente
-        'views/sge_agenciaviajes_menus.xml',
-        'views/sge_agenciaviajes_viaje.xml',
-        'views/sge_agenciaviajes_destino.xml',
+        'views/svl_agenciaviajes_menu.xml',
+        'views/svl_agenciaviajes_viaje.xml',
+        'views/svl_agenciaviajes_destino.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
