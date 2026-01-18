@@ -4,6 +4,9 @@ class Cliente(models.Model):
     _name = 'svl_agenciaviajes.cliente'
     
     name = fields.Char(string="Nombre del Cliente", required=True)
+    apellidos = fields.Char(string="Apellidos del Cliente", required=True)
+    email = fields.Char(string="Correo Electrónico", required=True)
+    telefono = fields.Char(string="Teléfono", required=True)
     
     viaje_ids = fields.One2many(
         'svl_agenciaviajes.viaje', 
@@ -11,6 +14,14 @@ class Cliente(models.Model):
         string="Viajes Contratados"
     )
     
+    destino_ids = fields.Many2many(
+    'svl_agenciaviajes.destino', 
+    'rel_clientes_destinos',     
+    'cliente_id',                
+    'destino_id',                
+    string='Destinos de Interés'
+    )
+
     viaje_count = fields.Integer(string="Nº de Viajes", compute="_compute_viaje_count")
 
     @api.depends('viaje_ids')
