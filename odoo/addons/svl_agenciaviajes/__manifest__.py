@@ -24,12 +24,13 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
     'data': [
         'security/ir.model.access.csv',
         'models/data/temporada_data.xml',
+        'models/data/destino_data.xml',
 
     #Importante que el "menus.xml" esté antes que las vistas para que se creen los menús correctamente
         'views/svl_agenciaviajes_menu.xml',
         'views/svl_agenciaviajes_viaje.xml',
-        'views/svl_agenciaviajes_destino.xml',
         'views/svl_agenciaviajes_cliente.xml',
+        'views/svl_agenciaviajes_destino.xml',
 
     ],
     # only loaded in demonstration mode

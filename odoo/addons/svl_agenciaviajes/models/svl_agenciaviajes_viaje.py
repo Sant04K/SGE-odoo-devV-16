@@ -18,7 +18,7 @@ class Viaje(models.Model):
     )
 
     destino_id = fields.Many2one('svl_agenciaviajes.destino', string='Destino', required=True) 
-    cliente_id = fields.Many2one('svl_agenciaviajes.cliente', string='Cliente', required=True)
+    cliente_id = fields.Many2one('svl_agenciaviajes.cliente', string='Cliente')
     temporada_id = fields.Many2one('svl_agenciaviajes.temporada', string='Temporada Seleccionada', required=True)
 
     fecha_inicio = fields.Date(string='Fecha Inicio')
@@ -66,5 +66,7 @@ class Viaje(models.Model):
                     record.precio_total = record.precio_base * 1.20
                 elif record.temporada_id.state == "oportunidad":
                     record.precio_total = record.precio_base * 0.85
-            else:
-                record.precio_total = record.precio_base
+                elif record.temporada_id.state == "baja":
+                    record.precio_total = record.precio_base * 1.00
+                else:
+                    record.precio_total = record.precio_base
