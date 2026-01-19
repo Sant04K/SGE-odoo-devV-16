@@ -1,30 +1,93 @@
+
 <odoo>
-    <data>
-<!--
-          <record id="object0" model="svl_agenciaviajes.svl_agenciaviajes">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+    <data noupdate="1">
+        <record id="destino_espana" model="svl_agenciaviajes.destino">
+            <field name="name">Europa</field>
+            <field name="pais">España</field>
+            <field name="ciudad">Madrid</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/madrid.jpg"/>
+        </record>
 
-          <record id="object1" model="svl_agenciaviajes.svl_agenciaviajes">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+        <record id="destino_francia" model="svl_agenciaviajes.destino">
+            <field name="name">Europa</field>
+            <field name="pais">Francia</field>
+            <field name="ciudad">París</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/paris.jpg"/>
+        </record>
 
-          <record id="object2" model="svl_agenciaviajes.svl_agenciaviajes">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+        <record id="destino_italia" model="svl_agenciaviajes.destino">
+            <field name="name">Europa</field>
+            <field name="pais">Italia</field>
+            <field name="ciudad">Roma</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/roma.jpg"/>
+        </record>
 
-          <record id="object3" model="svl_agenciaviajes.svl_agenciaviajes">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+        <record id="destino_alemania" model="svl_agenciaviajes.destino">
+            <field name="name">Europa</field>
+            <field name="pais">Alemania</field>
+            <field name="ciudad">Berlín</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/berlin.jpg"/>
+        </record>
 
-          <record id="object4" model="svl_agenciaviajes.svl_agenciaviajes">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+        <record id="destino_grecia" model="svl_agenciaviajes.destino">
+            <field name="name">Europa</field>
+            <field name="pais">Grecia</field>
+            <field name="ciudad">Atenas</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/atenas.jpg"/>
+        </record>
+
+        <record id="destino_eeuu_ny" model="svl_agenciaviajes.destino">
+            <field name="name">Norteamérica</field>
+            <field name="pais">Estados Unidos</field>
+            <field name="ciudad">Nueva York</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/nueva_york.jpg"/>
+        </record>
+
+        <record id="destino_eeuu_ca" model="svl_agenciaviajes.destino">
+            <field name="name">Norteamérica</field>
+            <field name="pais">Estados Unidos</field>
+            <field name="ciudad">Los Ángeles</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/los_angeles.jpg"/>
+        </record>
+
+        <record id="destino_mexico" model="svl_agenciaviajes.destino">
+            <field name="name">América</field>
+            <field name="pais">México</field>
+            <field name="ciudad">Ciudad de México</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/mexico.jpg"/>
+        </record>
+
+        <record id="destino_argentina" model="svl_agenciaviajes.destino">
+            <field name="name">América</field>
+            <field name="pais">Argentina</field>
+            <field name="ciudad">Buenos Aires</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/buenos_aires.jpg"/>
+        </record>
+
+        <record id="destino_japon" model="svl_agenciaviajes.destino">
+            <field name="name">Asia</field>
+            <field name="pais">Japón</field>
+            <field name="ciudad">Tokio</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/tokio.jpg"/>
+        </record>
+
+        <record id="destino_china" model="svl_agenciaviajes.destino">
+            <field name="name">Asia</field>
+            <field name="pais">China</field>
+            <field name="ciudad">Pekín</field>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/pekin.jpg"/>
+        </record>
+                
+        <record id="temporada_alta" model="svl_agenciaviajes.temporada">
+            <field name="state">alta</field>
+        </record>
+
+        <record id="temporada_baja" model="svl_agenciaviajes.temporada">
+            <field name="state">baja</field>
+        </record>
+
+        <record id="temporada_oportunidad" model="svl_agenciaviajes.temporada">
+            <field name="state">oportunidad</field>
+        </record>
     </data>
 </odoo>

@@ -28,7 +28,7 @@
                                 <field name="cliente_ids" widget="many2many_tags" string="Clientes Interesados"/>
                             </group>
                             <group>
-                                <field name="imagen"/>
+                                <field name="imagen" widget="image"/>
                             </group>
                         </group>
                     </sheet>
