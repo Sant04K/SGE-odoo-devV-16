@@ -5,7 +5,7 @@
             <field name="name">svl_agenciaviajes.destino</field>
             <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">
-                <tree string="Destinos" create="1" delete="1" edit="1">
+                <tree string="Destinos" create="0" delete="0" edit="0">
                     <field name="name"/>
                     <field name="pais"/>
                     <field name="ciudad"/>
