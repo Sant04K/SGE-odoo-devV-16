@@ -5,79 +5,79 @@
             <field name="name">Europa</field>
             <field name="pais">España</field>
             <field name="ciudad">Madrid</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/madrid.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/madrid.jpg"/>
         </record>
 
         <record id="destino_francia" model="svl_agenciaviajes.destino">
             <field name="name">Europa</field>
             <field name="pais">Francia</field>
             <field name="ciudad">París</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/paris.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/paris.jpg"/>
         </record>
 
         <record id="destino_italia" model="svl_agenciaviajes.destino">
             <field name="name">Europa</field>
             <field name="pais">Italia</field>
             <field name="ciudad">Roma</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/roma.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/roma.jpg"/>
         </record>
 
         <record id="destino_alemania" model="svl_agenciaviajes.destino">
             <field name="name">Europa</field>
             <field name="pais">Alemania</field>
             <field name="ciudad">Berlín</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/berlin.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/berlin.jpg"/>
         </record>
 
         <record id="destino_grecia" model="svl_agenciaviajes.destino">
             <field name="name">Europa</field>
             <field name="pais">Grecia</field>
             <field name="ciudad">Atenas</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/atenas.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/atenas.jpg"/>
         </record>
 
         <record id="destino_eeuu_ny" model="svl_agenciaviajes.destino">
             <field name="name">Norteamérica</field>
             <field name="pais">Estados Unidos</field>
             <field name="ciudad">Nueva York</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/nueva_york.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/nueva_york.jpg"/>
         </record>
 
         <record id="destino_eeuu_ca" model="svl_agenciaviajes.destino">
             <field name="name">Norteamérica</field>
             <field name="pais">Estados Unidos</field>
             <field name="ciudad">Los Ángeles</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/los_angeles.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/los_angeles.jpg"/>
         </record>
 
         <record id="destino_mexico" model="svl_agenciaviajes.destino">
             <field name="name">América</field>
             <field name="pais">México</field>
             <field name="ciudad">Ciudad de México</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/mexico.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/mexico.jpg"/>
         </record>
 
         <record id="destino_argentina" model="svl_agenciaviajes.destino">
             <field name="name">América</field>
             <field name="pais">Argentina</field>
             <field name="ciudad">Buenos Aires</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/buenos_aires.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/buenos_aires.jpg"/>
         </record>
 
         <record id="destino_japon" model="svl_agenciaviajes.destino">
             <field name="name">Asia</field>
             <field name="pais">Japón</field>
             <field name="ciudad">Tokio</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/tokio.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/tokio.jpg"/>
         </record>
 
         <record id="destino_china" model="svl_agenciaviajes.destino">
             <field name="name">Asia</field>
             <field name="pais">China</field>
             <field name="ciudad">Pekín</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/models/data/images/pekin.jpg"/>
+            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/pekin.jpg"/>
         </record>
-                
+
         <record id="temporada_alta" model="svl_agenciaviajes.temporada">
             <field name="state">alta</field>
         </record>
@@ -88,6 +88,46 @@
 
         <record id="temporada_oportunidad" model="svl_agenciaviajes.temporada">
             <field name="state">oportunidad</field>
+        </record>
+
+        <record id="cliente_demo_ana" model="svl_agenciaviajes.cliente">
+            <field name="name">Ana</field>
+            <field name="apellidos">García López</field>
+            <field name="email">ana.garcia@demo.com</field>
+            <field name="telefono">+34 600 111 222</field>
+            <field name="destino_ids" eval="[(6, 0, [ref('destino_espana'), ref('destino_italia'), ref('destino_francia')])]"/>
+        </record>
+
+        <record id="cliente_demo_john" model="svl_agenciaviajes.cliente">
+            <field name="name">John</field>
+            <field name="apellidos">Smith</field>
+            <field name="email">john.smith@demo.com</field>
+            <field name="telefono">+1 212 555 0199</field>
+            <field name="destino_ids" eval="[(6, 0, [ref('destino_eeuu_ny'), ref('destino_japon')])]"/>
+        </record>
+
+        <record id="cliente_demo_maria" model="svl_agenciaviajes.cliente">
+            <field name="name">María</field>
+            <field name="apellidos">Rodríguez Pérez</field>
+            <field name="email">maria.rodriguez@demo.com</field>
+            <field name="telefono">+52 55 1234 5678</field>
+            <field name="destino_ids" eval="[(6, 0, [ref('destino_mexico'), ref('destino_argentina')])]"/>
+        </record>
+
+        <record id="cliente_demo_kenji" model="svl_agenciaviajes.cliente">
+            <field name="name">Kenji</field>
+            <field name="apellidos">Tanaka</field>
+            <field name="email">kenji.tanaka@demo.com</field>
+            <field name="telefono">+81 3 1234 5678</field>
+            <field name="destino_ids" eval="[(6, 0, [ref('destino_grecia'), ref('destino_china'), ref('destino_alemania')])]"/>
+        </record>
+
+        <record id="cliente_demo_laura" model="svl_agenciaviajes.cliente">
+            <field name="name">Laura</field>
+            <field name="apellidos">Dubois</field>
+            <field name="email">laura.dubois@demo.com</field>
+            <field name="telefono">+33 1 45 67 89 00</field>
+            <field name="destino_ids" eval="[(6, 0, [ref('destino_eeuu_ca')])]"/>
         </record>
     </data>
 </odoo>
