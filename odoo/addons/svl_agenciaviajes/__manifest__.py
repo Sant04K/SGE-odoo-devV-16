@@ -5,30 +5,36 @@
     'summary': "Gestiona una agencia de viajes",
 
     'description': """
-Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, viajes, reservas y pagos.
+Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, viajes y reservas.
     """,
 
     'author': "Santos Valdivielso",
     'website': "https://github.com/Sant04K",
+    'license': 'AGPL-3',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.9',
+    'version': '1.3.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
     # always loaded
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
+        
 
     #Importante que el "menus.xml" esté antes que las vistas para que se creen los menús correctamente
         'views/svl_agenciaviajes_menu.xml',
         'views/svl_agenciaviajes_viaje.xml',
         'views/svl_agenciaviajes_cliente.xml',
         'views/svl_agenciaviajes_destino.xml',
+
+    #Informes
+        'reports/report_cliente.xml',
 
     ],
     # only loaded in demonstration mode

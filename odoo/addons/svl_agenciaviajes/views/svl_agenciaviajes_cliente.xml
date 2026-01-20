@@ -15,6 +15,18 @@
         </field>
     </record>
 
+    <record id="agenciaviajes_cliente_search_view" model="ir.ui.view">
+        <field name="name">svl.agenciaviajes_cliente.search</field>
+        <field name="model">svl_agenciaviajes.cliente</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Clientes">
+                <field name="name"/>
+                <field name="apellidos"/>
+                <filter name="telefono" string="Telefonos españoles:" domain="[('telefono','=like', '+34%')]"/>
+            </search>
+        </field>
+    </record>
+
     <record id="view_svl_agenciaviajes_cliente_form" model="ir.ui.view">
         <field name="name">svl.agenciaviajes.cliente.form</field>
         <field name="model">svl_agenciaviajes.cliente</field>
@@ -61,7 +73,7 @@
                                 <tree editable="bottom">
                                     <field name="name"/>
                                     <field name="pais"/>
-                                    <field name="ciudad"/>
+                                    <field name="continente"/>
                                 </tree>
                             </field>
                         </page>

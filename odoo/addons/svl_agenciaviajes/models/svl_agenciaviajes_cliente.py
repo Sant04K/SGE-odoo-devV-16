@@ -2,6 +2,7 @@ from odoo import models, fields, api
 
 class Cliente(models.Model):
     _name = 'svl_agenciaviajes.cliente'
+    _description = 'Clientes de la Agencia de Viajes'
     
     name = fields.Char(string="Nombre del Cliente", required=True)
     apellidos = fields.Char(string="Apellidos del Cliente", required=True)

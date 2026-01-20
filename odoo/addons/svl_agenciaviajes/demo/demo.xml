@@ -2,79 +2,79 @@
 <odoo>
     <data noupdate="1">
         <record id="destino_espana" model="svl_agenciaviajes.destino">
-            <field name="name">Europa</field>
+            <field name="continente">Europa</field>
             <field name="pais">España</field>
-            <field name="ciudad">Madrid</field>
+            <field name="name">Madrid</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/madrid.jpg"/>
         </record>
 
         <record id="destino_francia" model="svl_agenciaviajes.destino">
-            <field name="name">Europa</field>
+            <field name="continente">Europa</field>
             <field name="pais">Francia</field>
-            <field name="ciudad">París</field>
+            <field name="name">París</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/paris.jpg"/>
         </record>
 
         <record id="destino_italia" model="svl_agenciaviajes.destino">
-            <field name="name">Europa</field>
+            <field name="continente">Europa</field>
             <field name="pais">Italia</field>
-            <field name="ciudad">Roma</field>
+            <field name="name">Roma</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/roma.jpg"/>
         </record>
 
         <record id="destino_alemania" model="svl_agenciaviajes.destino">
-            <field name="name">Europa</field>
+            <field name="continente">Europa</field>
             <field name="pais">Alemania</field>
-            <field name="ciudad">Berlín</field>
+            <field name="name">Berlín</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/berlin.jpg"/>
         </record>
 
         <record id="destino_grecia" model="svl_agenciaviajes.destino">
-            <field name="name">Europa</field>
+            <field name="continente">Europa</field>
             <field name="pais">Grecia</field>
-            <field name="ciudad">Atenas</field>
+            <field name="name">Atenas</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/atenas.jpg"/>
         </record>
 
         <record id="destino_eeuu_ny" model="svl_agenciaviajes.destino">
-            <field name="name">Norteamérica</field>
+            <field name="continente">Norteamérica</field>
             <field name="pais">Estados Unidos</field>
-            <field name="ciudad">Nueva York</field>
+            <field name="name">Nueva York</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/nueva_york.jpg"/>
         </record>
 
         <record id="destino_eeuu_ca" model="svl_agenciaviajes.destino">
-            <field name="name">Norteamérica</field>
+            <field name="continente">Norteamérica</field>
             <field name="pais">Estados Unidos</field>
-            <field name="ciudad">Los Ángeles</field>
+            <field name="name">Los Ángeles</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/los_angeles.jpg"/>
         </record>
 
         <record id="destino_mexico" model="svl_agenciaviajes.destino">
-            <field name="name">América</field>
+            <field name="continente">América</field>
             <field name="pais">México</field>
-            <field name="ciudad">Ciudad de México</field>
+            <field name="name">Ciudad de México</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/mexico.jpg"/>
         </record>
 
         <record id="destino_argentina" model="svl_agenciaviajes.destino">
-            <field name="name">América</field>
+            <field name="continente">América</field>
             <field name="pais">Argentina</field>
-            <field name="ciudad">Buenos Aires</field>
+            <field name="name">Buenos Aires</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/buenos_aires.jpg"/>
         </record>
 
         <record id="destino_japon" model="svl_agenciaviajes.destino">
-            <field name="name">Asia</field>
+            <field name="continente">Asia</field>
             <field name="pais">Japón</field>
-            <field name="ciudad">Tokio</field>
+            <field name="name">Tokio</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/tokio.jpg"/>
         </record>
 
         <record id="destino_china" model="svl_agenciaviajes.destino">
-            <field name="name">Asia</field>
+            <field name="continente">Asia</field>
             <field name="pais">China</field>
-            <field name="ciudad">Pekín</field>
+            <field name="name">Pekín</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/pekin.jpg"/>
         </record>
 

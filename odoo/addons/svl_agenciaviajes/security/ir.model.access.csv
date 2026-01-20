@@ -1,5 +1,13 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_svl_agenciaviajes_viaje,svl_agenciaviajes.viaje,model_svl_agenciaviajes_viaje,base.group_user,1,1,1,1
-access_svl_agenciaviajes_destino,svl_agenciaviajes.destino,model_svl_agenciaviajes_destino,base.group_user,1,1,1,1
-access_svl_agenciaviajes_cliente,svl_agenciaviajes.cliente,model_svl_agenciaviajes_cliente,base.group_user,1,1,1,1
-access_svl_agenciaviajes_temporada,access.svl.agenciaviajes.temporada,model_svl_agenciaviajes_temporada,base.group_user,1,1,1,1
+
+access_viaje_user,access.viaje.user,model_svl_agenciaviajes_viaje,svl_agenciaviajes.grupo_agencia_usuario,1,0,0,0
+access_viaje_manager,access.viaje.manager,model_svl_agenciaviajes_viaje,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1
+
+access_destino_user,access.destino.user,model_svl_agenciaviajes_destino,svl_agenciaviajes.grupo_agencia_usuario,1,0,0,0
+access_destino_manager,access.destino.manager,model_svl_agenciaviajes_destino,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1
+
+access_cliente_user,access.cliente.user,model_svl_agenciaviajes_cliente,svl_agenciaviajes.grupo_agencia_usuario,1,0,0,0
+access_cliente_manager,access.cliente.manager,model_svl_agenciaviajes_cliente,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1
+
+
+access_temporada_manager,access.temporada.manager,model_svl_agenciaviajes_temporada,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1

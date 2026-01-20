@@ -1,0 +1,75 @@
+<odoo>
+    <data>
+        <record id="action_svl_agenciaviajes_report_cliente" model="ir.actions.report">
+            <field name="name">Informe de Clientes</field>
+            <field name="model">svl_agenciaviajes.cliente</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">svl_agenciaviajes.plantilla_report_cliente</field>
+            <field name="report_file">svl_agenciaviajes.plantilla_report_cliente</field>
+            <field name="print_report_name">'Libro_Clientes_%s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_svl_agenciaviajes_cliente"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="plantilla_report_cliente">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o"> <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2 t-field="o.name"/> <div>
+                                <strong>Apellidos:</strong> <span t-field="o.apellidos"/><br/>
+                                <strong>Email:</strong> <span t-field="o.email"/><br/>
+                                <strong>Teléfono:</strong> <span t-field="o.telefono"/><br/>
+                            </div>
+
+                            <h3>Viajes del Cliente</h3>
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Destino</th>
+                                        <th>Fecha Inicio</th>
+                                        <th>Fecha Fin</th>
+                                        <th>Precio Base</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="o.viaje_ids" t-as="viaje">
+                                        <tr>
+                                            <td><span t-field="viaje.name"/></td>
+                                            <td><span t-field="viaje.destino_id"/></td>
+                                            <td><span t-field="viaje.fecha_inicio"/></td>
+                                            <td><span t-field="viaje.fecha_fin"/></td>
+                                            <td><span t-field="viaje.precio_base"/></td>
+                                            <td><span t-field="viaje.state"/></td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <h3>Destinos que interesan</h3>
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>País</th>
+                                        <th>Continente</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <t t-foreach="o.destino_ids" t-as="destino">
+                                        <tr>
+                                            <td><span t-field="destino.name"/></td>
+                                            <td><span t-field="destino.pais"/></td>
+                                            <td><span t-field="destino.continente"/></td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
