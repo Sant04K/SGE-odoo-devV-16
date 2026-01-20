@@ -129,5 +129,40 @@
             <field name="telefono">+33 1 45 67 89 00</field>
             <field name="destino_ids" eval="[(6, 0, [ref('destino_eeuu_ca')])]"/>
         </record>
+
+        <record id="viaje_demo_roma" model="svl_agenciaviajes.viaje">
+            <field name="name">Escapada Romántica a Roma</field>
+            <field name="precio_base">1000.0</field>
+            <field name="destino_id" ref="destino_italia"/> <field name="cliente_id" ref="cliente_ejemplo_1"/> <field name="temporada_id" ref="temporada_alta"/> <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=15)).strftime('%Y-%m-%d')"/>
+            <field name="fecha_fin" eval="(datetime.now() - relativedelta(days=10)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="viaje_demo_tokio" model="svl_agenciaviajes.viaje">
+            <field name="name">Aventura en Tokio</field>
+            <field name="precio_base">2000.0</field>
+            <field name="destino_id" ref="destino_japon"/>
+            <field name="cliente_id" ref="cliente_demo_maria"/>
+            <field name="temporada_id" ref="temporada_oportunidad"/>
+            <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=5)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="viaje_demo_madrid" model="svl_agenciaviajes.viaje">
+            <field name="name">Madrid Cultural</field>
+            <field name="precio_base">500.0</field>
+            <field name="destino_id" ref="destino_espana"/>
+            <field name="cliente_id" ref="cliente_demo_john"/>
+            <field name="temporada_id" ref="temporada_baja"/>
+            <field name="fecha_inicio" eval="(datetime.now() + relativedelta(days=30)).strftime('%Y-%m-%d')"/>
+            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=35)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="viaje_demo_nueva_york" model="svl_agenciaviajes.viaje">
+            <field name="name">Luces de Nueva York</field>
+            <field name="precio_base">1500.0</field>
+            <field name="destino_id" ref="destino_eeuu_ny"/>
+            <field name="cliente_id" ref="cliente_demo_maria"/>
+            <field name="temporada_id" ref="temporada_alta"/>
+            </record>
     </data>
 </odoo>
