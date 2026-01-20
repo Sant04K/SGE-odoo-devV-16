@@ -1,0 +1,405 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* svl_agenciaviajes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20251106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-20 22:58+0000\n"
+"PO-Revision-Date: 2026-01-21 00:19+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#. module: svl_agenciaviajes
+#: model:ir.actions.report,print_report_name:svl_agenciaviajes.action_svl_agenciaviajes_report_cliente
+msgid "'Libro_Clientes_%s' % (object.name)"
+msgstr "'Customer_Book_%s' % (object.name)"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid ""
+"<br/>\n"
+"                                <strong>Email:</strong>"
+msgstr ""
+"<br/>\n"
+"                               <strong>Email:</strong>"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid ""
+"<br/>\n"
+"                                <strong>Teléfono:</strong>"
+msgstr ""
+"<br/>\n"
+"                               <strong>Phone:</strong>"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "<strong>Apellidos:</strong>"
+msgstr "<strong>Last names:</strong>"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__abierto
+msgid "Abierto"
+msgstr "Open"
+
+#. module: svl_agenciaviajes
+#: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_root
+msgid "Agencia Viajes"
+msgstr "Travel Agency"
+
+#. module: svl_agenciaviajes
+#: model:ir.module.category,name:svl_agenciaviajes.categoria_agencia
+msgid "Agencia de Viajes"
+msgstr "Travel Agency"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__alta
+msgid "Alta"
+msgstr "Create"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__apellidos
+msgid "Apellidos del Cliente"
+msgstr "Client surname"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__baja
+msgid "Baja"
+msgstr "Remove"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.agenciaviajes_cliente_search_view
+msgid "Buscar Clientes"
+msgstr "Search Clients"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__name
+msgid "Ciudad"
+msgstr "City"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__cliente_id
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_form
+msgid "Cliente"
+msgstr "Client"
+
+#. module: svl_agenciaviajes
+#: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_cliente
+#: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_clientes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_tree
+msgid "Clientes"
+msgstr "Clients"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__cliente_ids
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_destino_form
+msgid "Clientes Interesados"
+msgstr "Clients with interest for"
+
+#. module: svl_agenciaviajes
+#: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_cliente
+msgid "Clientes de la Agencia de Viajes"
+msgstr "Clients from Travel Agency"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__continente
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "Continente"
+msgstr "Continent"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__email
+msgid "Correo Electrónico"
+msgstr "Email"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.actions.act_window,help:svl_agenciaviajes.action_svl_agenciaviajes_cliente
+msgid "Crea tu primer cliente"
+msgstr "Create your first client"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__create_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__create_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__create_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__create_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__create_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__create_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__destino_id
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_destino_form
+msgid "Destino"
+msgstr "Destination"
+
+#. module: svl_agenciaviajes
+#: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_destino
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_destino_tree
+msgid "Destinos"
+msgstr "Destinations"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__destino_ids
+msgid "Destinos de Interés"
+msgstr "Interested Destinations"
+
+#. module: svl_agenciaviajes
+#: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_destino
+msgid "Destinos de Viajes"
+msgstr "Trips Destinations"
+
+#. module: svl_agenciaviajes
+#: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_destino
+msgid "Destinos posibles"
+msgstr "Posible destinations"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_form
+msgid "Destinos que interesan"
+msgstr "Interested Destinations"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__display_name
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__display_name
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__display_name
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__duracion
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
+msgid "Duración (Días)"
+msgstr "Days"
+
+#. module: svl_agenciaviajes
+#: model:res.groups,name:svl_agenciaviajes.grupo_agencia_usuario
+msgid "Empleado"
+msgstr "Employee"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__en_curso
+msgid "En Curso"
+msgstr "On course"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__state
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__state
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "Estado"
+msgstr "Status"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__fecha_fin
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "Fecha Fin"
+msgstr "End Date"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
+msgid "Fecha Final"
+msgstr "End Date"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__fecha_inicio
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
+msgid "Fecha Inicio"
+msgstr "Start Date"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__finalizado
+msgid "Finalizado"
+msgstr "Finished"
+
+#. module: svl_agenciaviajes
+#: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_viaje
+msgid "Gestion de Viajes"
+msgstr "Create"
+
+#. module: svl_agenciaviajes
+#: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_viaje
+#: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_viaje
+msgid "Gestión de Viajes"
+msgstr "Trips Destinations"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__id
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__id
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__id
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__id
+msgid "ID"
+msgstr "ID"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__imagen
+msgid "Imagen del Destino"
+msgstr "Destination imagen"
+
+#. module: svl_agenciaviajes
+#: model:ir.actions.report,name:svl_agenciaviajes.action_svl_agenciaviajes_report_cliente
+msgid "Informe de Clientes"
+msgstr "Clients report"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_destino__continente
+msgid "Introducir el continente del destino"
+msgstr "Enter the destination continent"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_viaje__precio_base
+msgid "Introducir el precio base del viaje"
+msgstr "Enter the trip base price"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_destino__name
+msgid "Introducir la ciudad de destino"
+msgstr "Enter the testination city"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_viaje__name
+msgid "Introducir nombre del viaje"
+msgstr "Enter trip name"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_destino__pais
+msgid "Introducir pais de destino"
+msgstr "Enter destination country"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__write_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__write_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__write_uid
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__write_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__write_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__write_date
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: svl_agenciaviajes
+#: model:res.groups,name:svl_agenciaviajes.grupo_agencia_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: svl_agenciaviajes
+#: model:ir.module.category,description:svl_agenciaviajes.categoria_agencia
+msgid "Nivel de acceso para el módulo de viajes"
+msgstr "Acces level"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__name
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "Nombre"
+msgstr "Name"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__name
+msgid "Nombre del Cliente"
+msgstr "Client name"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_tree
+msgid "Nº Viajes"
+msgstr "Nº Trip"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__viaje_count
+msgid "Nº de Viajes"
+msgstr "Nº trips"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__oportunidad
+msgid "Oportunidad"
+msgstr "Oportinities"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__pais
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "País"
+msgstr "Country"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__planificacion
+msgid "Planificacion"
+msgstr "Planification"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__precio_base
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+msgid "Precio Base"
+msgstr "Base price"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__precio_total
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
+msgid "Precio Final"
+msgstr "Final price"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.agenciaviajes_cliente_search_view
+msgid "Telefonos españoles:"
+msgstr "Telephone from spain:"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__telefono
+msgid "Teléfono"
+msgstr "Telephone"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__temporada_id
+msgid "Temporada"
+msgstr "Season"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__temporada_id
+msgid "Temporada Seleccionada"
+msgstr "Selected Season"
+
+#. module: svl_agenciaviajes
+#: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_temporada
+msgid "Temporada del viaje"
+msgstr "Trip of the season"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
+msgid "Viaje"
+msgstr "Trip"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_form
+msgid "Viajes"
+msgstr "Trips"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__viaje_ids
+msgid "Viajes Contratados"
+msgstr "Trip paids"
+
+#. module: svl_agenciaviajes
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
+#: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_form
+msgid "Viajes del Cliente"
+msgstr "Client trip"
