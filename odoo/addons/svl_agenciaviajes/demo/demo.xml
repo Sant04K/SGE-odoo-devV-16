@@ -133,7 +133,10 @@
         <record id="viaje_demo_roma" model="svl_agenciaviajes.viaje">
             <field name="name">Escapada Romántica a Roma</field>
             <field name="precio_base">1000.0</field>
-            <field name="destino_id" ref="destino_italia"/> <field name="cliente_id" ref="cliente_ejemplo_1"/> <field name="temporada_id" ref="temporada_alta"/> <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=15)).strftime('%Y-%m-%d')"/>
+            <field name="destino_id" ref="destino_italia"/> 
+            <field name="cliente_id" ref="cliente_demo_kenji"/> 
+            <field name="temporada_id" ref="temporada_alta"/> 
+            <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=15)).strftime('%Y-%m-%d')"/>
             <field name="fecha_fin" eval="(datetime.now() - relativedelta(days=10)).strftime('%Y-%m-%d')"/>
         </record>
 
