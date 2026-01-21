@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data noupdate="1">
+    <data> 
 
         <record id="categoria_agencia" model="ir.module.category">
             <field name="name">Agencia de Viajes</field>
@@ -17,7 +17,9 @@
             <field name="name">Manager</field>
             <field name="category_id" ref="categoria_agencia"/>
             <field name="implied_ids" eval="[(4, ref('grupo_agencia_usuario'))]"/>
-            <field name="users" eval="[(4, ref('base.group_admin'))]"/>
+            <field name="users" eval="[ 
+                (4, ref('base.user_admin'))
+            ]"/>    
         </record>
 
     </data>
