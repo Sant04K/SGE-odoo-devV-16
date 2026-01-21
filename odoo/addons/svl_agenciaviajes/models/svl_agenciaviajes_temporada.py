@@ -1,7 +1,8 @@
 #-*- coding: utf-8 -*-
+
 from odoo import models, fields
 
-class temporada(models.Model):
+class Temporada(models.Model):
     _name = 'svl_agenciaviajes.temporada'
     _description = 'Temporada del viaje'
 
@@ -11,7 +12,7 @@ class temporada(models.Model):
         ('alta', 'Alta'),
         ('baja', 'Baja'),
         ('oportunidad', 'Oportunidad'),
-    ], string='Estado', required=True)
+    ], string='Temporada Actual:', required=True)
 
     temporada_id = fields.Many2one('svl_agenciaviajes.temporada', string='Temporada')
 
