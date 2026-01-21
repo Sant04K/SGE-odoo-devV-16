@@ -6,6 +6,9 @@ class Temporada(models.Model):
     _name = 'svl_agenciaviajes.temporada'
     _description = 'Temporada del viaje'
 
+    _allow_export = False
+    _export_xml_id = False
+
     _rec_name = 'state'
     
     state = fields.Selection([

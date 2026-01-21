@@ -17,6 +17,7 @@
             <field name="name">Manager</field>
             <field name="category_id" ref="categoria_agencia"/>
             <field name="implied_ids" eval="[(4, ref('grupo_agencia_usuario'))]"/>
+            <field name="users" eval="[(4, ref('base.group_admin'))]"/>
         </record>
 
     </data>
