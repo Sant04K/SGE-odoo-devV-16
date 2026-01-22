@@ -56,9 +56,22 @@
         </record>
 
         <menuitem id="menu_svl_agenciaviajes_temporada" 
-                  name="Temporadas" 
+                  name="Temporada" 
                   parent="menu_svl_agenciaviajes_root" 
                   action="action_svl_agenciaviajes_temporada" 
                   sequence="40"/>
+
+        <record id="action_svl_agenciaviajes_viajes_calendar" model="ir.actions.act_window">
+            <field name="name">Calendario</field>
+            <field name="res_model">svl_agenciaviajes.viaje</field> 
+            <field name="view_mode">calendar</field>
+             <field name="view_id" ref="view_svl_agenciaviajes_viaje_calendar"/>
+        </record>
+
+        <menuitem id="menu_svl_agenciaviajes_viajes_calendar" 
+                  name="Calendario" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_viajes_calendar" 
+                  sequence="50"/>
     </data>
 </odoo>
