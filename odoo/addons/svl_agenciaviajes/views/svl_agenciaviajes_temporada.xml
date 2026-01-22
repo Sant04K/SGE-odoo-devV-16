@@ -26,19 +26,5 @@
                 </form>
             </field>
         </record>
-
-        <record id="action_svl_agenciaviajes_temporada" model="ir.actions.act_window">
-            <field name="name">Temporada</field>
-            <field name="res_model">svl_agenciaviajes.temporada</field> 
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_svl_agenciaviajes_temporada_tree"/>
-        </record>
-
-        <menuitem id="menu_svl_agenciaviajes_temporada" 
-                  name="Temporadas" 
-                  parent="menu_svl_agenciaviajes_root" 
-                  action="action_svl_agenciaviajes_temporada" 
-                  sequence="20"/>
-    
     </data>
 </odoo>

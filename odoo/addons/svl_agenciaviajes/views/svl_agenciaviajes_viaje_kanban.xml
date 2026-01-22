@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_svl_agenciaviajes_viaje_kanban" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.viaje.kanban</field>
+            <field name="model">svl_agenciaviajes.viaje</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="state"> 
+                    <field name="destino_id"/>
+                    <field name="name"/>
+                    <field name="state"/>
+                    <template>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click ">
+                                <div class="card-header d-flex d-flex justify-content-center align-items-center">
+                                        <strong>
+                                            <field name="name" style="d-flex justify-content-center align-items-center" />
+                                        </strong>
+                                    </div>
+                            <div class="card-body d-flex">
+                               <div class="o_kanban_image_fill">                                 
+                                    <img t-attf-src="/web/image/svl_agenciaviajes.destino/#{record.destino_id.raw_value}/imagen" style="max-width: 100%; max-height: 100%; border-radius: 5px; border: 1px solid #ccc;"/>
+                                    <div class="oe_kanban_details d-flex flex-column" style="margin-left: 10px;">
+                                            <strong class="o_kanban_record_title">
+                                               <i class="oi oi-launch"/> <field name="destino_id" style="text-align: center;"/>
+                                            </strong>
+                                        <div style="d-flex justify-content-center align-items-center">
+                                            <span> <i class="oi oi-odoo"/> Precio: </span>   <field name="precio_total"/>    <span> €</span>
+                                        </div>
+                                        <div>
+                                            <field name="state" widget="label_selection" options="{'classes': {'draft': 'default', 'confirmado': 'success'}}"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-footer" style="d-flex justify-content-center align-items-center">
+                                <small>
+                                    <i class="oi oi-calendar"></i>
+                                    <span> Información de la fecha del viaje: </span>
+                                    <field name="fecha_inicio" widget="remaining_days"/>
+                                </small>
+                            </div>
+                        </div>
+                        </t>
+                    </template>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="view_svl_agenciaviajes_viaje_form" model="ir.ui.view">
+            <field name="name">svl_agenciaviajes.viaje.form</field>
+            <field name="model">svl_agenciaviajes.viaje</field>
+            <field name="arch" type="xml">
+                <form string="Viaje">
+                    <header>
+                        <field name="state" widget="statusbar" clickable="True"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="destino_id"/>
+                                <field name="temporada_id"/>
+                                <field name="cliente_id"/>
+                            </group>
+                            <group>
+                                <group>
+                                    <field name="precio_base"/>
+                                    <field name="precio_total" string="Precio Final"/>
+                                </group>
+                                <field name="fecha_inicio" string ="Fecha Inicio" widget="date"/>
+                                <field name="fecha_fin" string="Fecha Final" widget="date"/>
+                                <field name="duracion" string="Duración (Días)"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

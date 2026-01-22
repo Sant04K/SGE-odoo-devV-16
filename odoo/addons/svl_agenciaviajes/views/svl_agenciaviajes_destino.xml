@@ -34,20 +34,6 @@
                     </sheet>
                 </form>
             </field>
-        </record>
-
-        <record id="action_svl_agenciaviajes_destino" model="ir.actions.act_window">
-            <field name="name">Destinos posibles</field>
-            <field name="res_model">svl_agenciaviajes.destino</field> 
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_svl_agenciaviajes_destino_tree"/>
-        </record>
-        
-        <menuitem id="menu_svl_agenciaviajes_destino" 
-                  name="Destinos" 
-                  parent="menu_svl_agenciaviajes_root" 
-                  action="action_svl_agenciaviajes_destino" 
-                  sequence="20"/>
-    
+        </record>  
     </data>
 </odoo>

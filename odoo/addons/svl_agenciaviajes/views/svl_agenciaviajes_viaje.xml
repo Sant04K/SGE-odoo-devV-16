@@ -48,24 +48,5 @@
                 </form>
             </field>
         </record>
-
-
-        <record id="action_svl_agenciaviajes_viaje" model="ir.actions.act_window">
-            <field name="name">Gestión de Viajes</field>
-            <field name="res_model">svl_agenciaviajes.viaje</field> 
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_svl_agenciaviajes_viaje_tree"/>            
-        </record>
-
-        <menuitem id="menu_svl_agenciaviajes_root" 
-                  name="Agencia Viajes" 
-                  sequence="10"/>
-
-        <menuitem id="menu_svl_agenciaviajes_viaje" 
-                  name="Gestión de Viajes" 
-                  parent="menu_svl_agenciaviajes_root" 
-                  action="action_svl_agenciaviajes_viaje" 
-                  sequence="10"/>
-
     </data>
 </odoo>

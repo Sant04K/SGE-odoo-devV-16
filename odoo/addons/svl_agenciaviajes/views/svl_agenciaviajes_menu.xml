@@ -1,7 +1,64 @@
 <odoo>
     <data>
+
+        <record id="action_svl_agenciaviajes_root" model="ir.actions.act_window">
+            <field name="name">Viajes</field>
+            <field name="res_model">svl_agenciaviajes.viaje</field> 
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_id" ref="view_svl_agenciaviajes_viaje_kanban"/>
+            </record>
+        
         <menuitem id="menu_svl_agenciaviajes_root" 
                   name="Agencia Viajes" 
+                  action="action_svl_agenciaviajes_root"
                   sequence="10"/>
+
+        <record id="action_svl_agenciaviajes_viaje" model="ir.actions.act_window">
+            <field name="name">Gestión de Viajes</field>
+            <field name="res_model">svl_agenciaviajes.viaje</field> 
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="menu_svl_agenciaviajes_viaje" 
+                  name="Viajes" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_viaje" 
+                  sequence="10"/>
+
+        <record id="action_svl_agenciaviajes_cliente" model="ir.actions.act_window">
+            <field name="name">Clientes</field>
+            <field name="res_model">svl_agenciaviajes.cliente</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_svl_agenciaviajes_cliente" 
+                  name="Clientes" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_cliente" 
+                  sequence="20"/>
+
+        <record id="action_svl_agenciaviajes_destino" model="ir.actions.act_window">
+            <field name="name">Destinos posibles</field>
+            <field name="res_model">svl_agenciaviajes.destino</field> 
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="menu_svl_agenciaviajes_destino" 
+                  name="Destinos" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_destino" 
+                  sequence="30"/>
+
+        <record id="action_svl_agenciaviajes_temporada" model="ir.actions.act_window">
+            <field name="name">Temporada</field>
+            <field name="res_model">svl_agenciaviajes.temporada</field> 
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_svl_agenciaviajes_temporada" 
+                  name="Temporadas" 
+                  parent="menu_svl_agenciaviajes_root" 
+                  action="action_svl_agenciaviajes_temporada" 
+                  sequence="40"/>
     </data>
 </odoo>
