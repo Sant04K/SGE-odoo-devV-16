@@ -4,8 +4,7 @@
         <record id="action_svl_agenciaviajes_root" model="ir.actions.act_window">
             <field name="name">Viajes</field>
             <field name="res_model">svl_agenciaviajes.viaje</field> 
-            <field name="view_mode">kanban,tree,form</field>
-            <field name="view_id" ref="view_svl_agenciaviajes_viaje_kanban"/>
+            <field name="view_mode">kanban,form</field>
             </record>
         
         <menuitem id="menu_svl_agenciaviajes_root" 
@@ -65,7 +64,6 @@
             <field name="name">Calendario</field>
             <field name="res_model">svl_agenciaviajes.viaje</field> 
             <field name="view_mode">calendar</field>
-             <field name="view_id" ref="view_svl_agenciaviajes_viaje_calendar"/>
         </record>
 
         <menuitem id="menu_svl_agenciaviajes_viajes_calendar" 
