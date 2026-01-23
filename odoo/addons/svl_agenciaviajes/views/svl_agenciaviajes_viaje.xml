@@ -76,6 +76,7 @@
                     <sheet>
                         <group>
                             <group>
+                                 <separator string="Información Basica"/>
                                 <field name="name"/>
                                 <field name="destino_id"/>
                                 <field name="temporada_id"/>
@@ -83,12 +84,15 @@
                             </group>
                             <group>
                                 <group>
+                                    <separator string="Precios"/>
                                     <field name="precio_base"/>
                                     <field name="precio_total" string="Precio Final"/>
+
+                                    <separator string="Fechas del Viaje"/>
+                                    <field name="fecha_inicio" string ="Fecha Inicio" widget="date"/>
+                                    <field name="fecha_fin" string="Fecha Final" widget="date"/>
+                                    <field name="duracion" string="Duración (Días)"/>
                                 </group>
-                                <field name="fecha_inicio" string ="Fecha Inicio" widget="date"/>
-                                <field name="fecha_fin" string="Fecha Final" widget="date"/>
-                                <field name="duracion" string="Duración (Días)"/>
                             </group>
                         </group>
                     </sheet>
@@ -99,7 +103,13 @@
             <field name="name">svl_agenciaviajes.viaje.calendar</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
-                <calendar string="Calendario de Viajes" date_start="fecha_inicio" date_stop="fecha_fin" color="state" mode="month">
+                <calendar string="Calendario de Viajes"
+                    date_start="fecha_inicio"
+                    date_stop="fecha_fin" 
+                    color="state"
+                    mode="month" 
+                    quick_create="False">
+
                     <field name="name"/>
                     <field name="destino_id"/>
                     <field name="cliente_id"/>

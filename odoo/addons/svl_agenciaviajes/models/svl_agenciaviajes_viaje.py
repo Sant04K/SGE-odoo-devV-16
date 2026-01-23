@@ -2,6 +2,7 @@
 
 from datetime import date
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 class Viaje(models.Model):
     _name = 'svl_agenciaviajes.viaje'
@@ -70,3 +71,10 @@ class Viaje(models.Model):
                     record.precio_total = record.precio_base * 1.00
                 else:
                     record.precio_total = record.precio_base
+
+    @api.constrains('fecha_inicio', 'fecha_fin')
+    def _check_fechas(self):
+        for record in self:
+            if record.fecha_inicio and record.fecha_fin:
+                if record.fecha_fin < record.fecha_inicio:
+                    raise ValidationError("La fecha de fin no puede ser anterior a la fecha de inicio.")
