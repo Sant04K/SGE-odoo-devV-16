@@ -26,6 +26,7 @@
                                 class="btn-secondary" 
                                 special="cancel"/>
                     </footer>
+
                 </form>
             </field>
         </record>
