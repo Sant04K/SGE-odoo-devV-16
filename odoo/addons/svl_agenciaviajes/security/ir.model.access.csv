@@ -11,3 +11,6 @@ access_cliente_manager,access.cliente.manager,model_svl_agenciaviajes_cliente,sv
 
 
 access_temporada_manager,access.temporada.manager,model_svl_agenciaviajes_temporada,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1
+
+access_wizard_user,access.wizard.user,model_svl_agenciaviajes_wizard,svl_agenciaviajes.grupo_agencia_usuario,1,0,0,0
+access_wizard_manager,access.wizard.manager,model_svl_agenciaviajes_wizard,svl_agenciaviajes.grupo_agencia_manager,1,1,1,1
