@@ -63,17 +63,22 @@ msgstr "Travel Agency"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__alta
 msgid "Alta"
-msgstr "Create"
+msgstr "High"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__apellidos
+msgid "Apellidos"
+msgstr "Last Name"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__apellidos
 msgid "Apellidos del Cliente"
-msgstr "Client surname"
+msgstr "Client Surname"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__baja
 msgid "Baja"
-msgstr "Remove"
+msgstr "Low"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.agenciaviajes_cliente_search_view
@@ -92,6 +97,21 @@ msgid "Cliente"
 msgstr "Client"
 
 #. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente_especial__es_cliente_frecuente
+msgid "Cliente Frecuente"
+msgstr "Frequent Customer"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente_especial__dni
+msgid "DNI"
+msgstr "ID Card"
+
+#. module: svl_agenciaviajes
+#: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente_especial__tiene_pia
+msgid "Tiene PIA"
+msgstr "Has PIA"
+
+#. module: svl_agenciaviajes
 #: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_cliente
 #: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_clientes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_tree
@@ -102,12 +122,12 @@ msgstr "Clients"
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__cliente_ids
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_destino_form
 msgid "Clientes Interesados"
-msgstr "Clients with interest for"
+msgstr "Interested Clients"
 
 #. module: svl_agenciaviajes
 #: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_cliente
 msgid "Clientes de la Agencia de Viajes"
-msgstr "Clients from Travel Agency"
+msgstr "Travel Agency Clients"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__continente
@@ -162,12 +182,12 @@ msgstr "Interested Destinations"
 #. module: svl_agenciaviajes
 #: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_destino
 msgid "Destinos de Viajes"
-msgstr "Trips Destinations"
+msgstr "Trip Destinations"
 
 #. module: svl_agenciaviajes
 #: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_destino
 msgid "Destinos posibles"
-msgstr "Posible destinations"
+msgstr "Possible Destinations"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
@@ -187,7 +207,7 @@ msgstr "Display Name"
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__duracion
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
 msgid "Duración (Días)"
-msgstr "Days"
+msgstr "Duration (Days)"
 
 #. module: svl_agenciaviajes
 #: model:res.groups,name:svl_agenciaviajes.grupo_agencia_usuario
@@ -197,7 +217,7 @@ msgstr "Employee"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__en_curso
 msgid "En Curso"
-msgstr "On course"
+msgstr "In Progress"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__state
@@ -232,13 +252,13 @@ msgstr "Finished"
 #. module: svl_agenciaviajes
 #: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_viaje
 msgid "Gestion de Viajes"
-msgstr "Create"
+msgstr "Trip Management"
 
 #. module: svl_agenciaviajes
 #: model:ir.actions.act_window,name:svl_agenciaviajes.action_svl_agenciaviajes_viaje
 #: model:ir.ui.menu,name:svl_agenciaviajes.menu_svl_agenciaviajes_viaje
 msgid "Gestión de Viajes"
-msgstr "Trips Destinations"
+msgstr "Trip Management"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__id
@@ -251,12 +271,12 @@ msgstr "ID"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__imagen
 msgid "Imagen del Destino"
-msgstr "Destination imagen"
+msgstr "Destination Image"
 
 #. module: svl_agenciaviajes
 #: model:ir.actions.report,name:svl_agenciaviajes.action_svl_agenciaviajes_report_cliente
 msgid "Informe de Clientes"
-msgstr "Clients report"
+msgstr "Client Report"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_destino__continente
@@ -271,7 +291,7 @@ msgstr "Enter the trip base price"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_destino__name
 msgid "Introducir la ciudad de destino"
-msgstr "Enter the testination city"
+msgstr "Enter the destination city"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,help:svl_agenciaviajes.field_svl_agenciaviajes_viaje__name
@@ -307,7 +327,7 @@ msgstr "Manager"
 #. module: svl_agenciaviajes
 #: model:ir.module.category,description:svl_agenciaviajes.categoria_agencia
 msgid "Nivel de acceso para el módulo de viajes"
-msgstr "Acces level"
+msgstr "Access Level"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__name
@@ -318,22 +338,22 @@ msgstr "Name"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__name
 msgid "Nombre del Cliente"
-msgstr "Client name"
+msgstr "Client Name"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_tree
 msgid "Nº Viajes"
-msgstr "Nº Trip"
+msgstr "Trip Count"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__viaje_count
 msgid "Nº de Viajes"
-msgstr "Nº trips"
+msgstr "Number of Trips"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_temporada__state__oportunidad
 msgid "Oportunidad"
-msgstr "Oportinities"
+msgstr "Opportunity"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_destino__pais
@@ -344,29 +364,29 @@ msgstr "Country"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields.selection,name:svl_agenciaviajes.selection__svl_agenciaviajes_viaje__state__planificacion
 msgid "Planificacion"
-msgstr "Planification"
+msgstr "Planning"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__precio_base
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
 msgid "Precio Base"
-msgstr "Base price"
+msgstr "Base Price"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_viaje__precio_total
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
 msgid "Precio Final"
-msgstr "Final price"
+msgstr "Final Price"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.agenciaviajes_cliente_search_view
 msgid "Telefonos españoles:"
-msgstr "Telephone from spain:"
+msgstr "Phones from Spain:"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__telefono
 msgid "Teléfono"
-msgstr "Telephone"
+msgstr "Phone"
 
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_temporada__temporada_id
@@ -381,7 +401,7 @@ msgstr "Selected Season"
 #. module: svl_agenciaviajes
 #: model:ir.model,name:svl_agenciaviajes.model_svl_agenciaviajes_temporada
 msgid "Temporada del viaje"
-msgstr "Trip of the season"
+msgstr "Season of the Trip"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_viaje_form
@@ -396,10 +416,10 @@ msgstr "Trips"
 #. module: svl_agenciaviajes
 #: model:ir.model.fields,field_description:svl_agenciaviajes.field_svl_agenciaviajes_cliente__viaje_ids
 msgid "Viajes Contratados"
-msgstr "Trip paids"
+msgstr "Booked Trips"
 
 #. module: svl_agenciaviajes
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.plantilla_report_cliente
 #: model_terms:ir.ui.view,arch_db:svl_agenciaviajes.view_svl_agenciaviajes_cliente_form
 msgid "Viajes del Cliente"
-msgstr "Client trip"
+msgstr "Client Trips"
