@@ -1,6 +1,6 @@
 
 <odoo>
-    <data noupdate="1">
+    <data noupdate="0">
         <record id="destino_espana" model="svl_agenciaviajes.destino">
             <field name="continente">Europa</field>
             <field name="pais">España</field>

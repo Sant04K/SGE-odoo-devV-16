@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <record id="view_wizard_tree" model="ir.ui.view">
+            <field name="name">svl.agenciaviajes.wizard.tree</field>
+            <field name="model">svl_agenciaviajes.wizard</field> <field name="arch" type="xml">
+                <tree>
+                    <field name="create_date"/> 
+                </tree>
+            </field>
+        </record>
+
         <record id="svl_agenciaviajes_wizard_form" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.wizard.form</field>
             <field name="model">svl_agenciaviajes.wizard</field>
