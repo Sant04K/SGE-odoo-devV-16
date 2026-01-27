@@ -38,7 +38,7 @@
                                 type="action" 
                                 class="oe_stat_button" 
                                 icon="fa-plane"
-                                context="{'search_default_cliente_id': active_id}">
+                                context="{'search_default_cliente_id': id}">
                             <field name="viaje_count" widget="statinfo" string="Viajes"/>
                         </button>
                     </div>
