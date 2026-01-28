@@ -166,8 +166,8 @@
             <field name="destino_id" ref="destino_eeuu_ny"/>
             <field name="cliente_id" ref="cliente_demo_maria"/>
             <field name="temporada_id" ref="temporada_alta"/>
-            <field name="fecha_inicio" eval="(datetime.now() + relativedelta(days=60)).strftime('%Y-%m-%d')"/>
-            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=67)).strftime('%Y-%m-%d')"/>
+            <field name="fecha_inicio" eval="False"/>
+            <field name="fecha_fin" eval="False"/>
         </record>
     </data>
 </odoo>

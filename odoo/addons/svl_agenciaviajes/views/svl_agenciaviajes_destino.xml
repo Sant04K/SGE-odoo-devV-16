@@ -24,7 +24,7 @@
                             <group>
                                 <field name="name"/>
                                 <field name="pais"/>
-                                <field name="continente"/>
+                                <field name="continente" edit="1"/>
                                 <field name="cliente_ids" widget="many2many_tags" string="Clientes Interesados"/>
                             </group>
                             <group>

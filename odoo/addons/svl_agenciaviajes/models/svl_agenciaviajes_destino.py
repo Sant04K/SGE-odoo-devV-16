@@ -19,3 +19,9 @@ class Destino(models.Model):
     'cliente_id', 
     string='Clientes Interesados'
     )
+
+    viaje_ids = fields.One2many(
+        'svl_agenciaviajes.viaje',
+        'destino_id',
+        string='Viajes a este Destino'
+    )
