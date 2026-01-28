@@ -34,11 +34,13 @@
             <form string="Cliente">
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                    <button class="oe_stat_button" 
-                        icon="fa-plane" 
-                        style="pointer-events: none; cursor: default;">
-                        <field name="viaje_count" widget="statinfo" string="Viajes"/>
-                    </button>
+                        <button name="%(action_svl_agenciaviajes_viaje)d" 
+                                type="action" 
+                                class="oe_stat_button" 
+                                icon="fa-plane"
+                                context="{'search_default_cliente_id': id}">
+                            <field name="viaje_count" widget="statinfo" string="Viajes"/>
+                        </button>
                     </div>
 
                     <group>

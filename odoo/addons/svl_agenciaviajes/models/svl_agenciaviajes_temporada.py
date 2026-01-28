@@ -17,8 +17,9 @@ class Temporada(models.Model):
         ('oportunidad', 'Oportunidad'),
     ], string='Temporada Actual:', required=True)
 
-    temporada_id = fields.One2many(
+    viaje_ids = fields.One2many(
         'svl_agenciaviajes.viaje',
         'temporada_id',
-        string='Viajes en esta Temporada')
+        string='Viajes en esta Temporada'
+    )
 

@@ -51,7 +51,7 @@
         <record id="action_svl_agenciaviajes_temporada" model="ir.actions.act_window">
             <field name="name">Temporada</field>
             <field name="res_model">svl_agenciaviajes.temporada</field> 
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">kanban,tree,form</field>
         </record>
 
         <menuitem id="menu_svl_agenciaviajes_temporada" 
