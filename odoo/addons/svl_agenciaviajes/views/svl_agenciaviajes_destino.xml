@@ -24,16 +24,29 @@
                             <group>
                                 <field name="name"/>
                                 <field name="pais"/>
-                                <field name="continente" edit="1"/>
+                                <field name="continente"/>
                                 <field name="cliente_ids" widget="many2many_tags" string="Clientes Interesados"/>
                             </group>
                             <group>
                                 <field name="imagen" widget="image"/>
                             </group>
                         </group>
+
+                        <notebook>
+                            <page string="Viajes Disponibles">
+                                <field name="viaje_ids">
+                                    <tree string="Viajes del destino">
+                                        <field name="name"/>
+                                        <field name="fecha_inicio"/>
+                                        <field name="precio_base"/>
+                                        <field name="state" widget="badge"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
-        </record>  
+        </record>   
     </data>
 </odoo>
