@@ -1,6 +1,6 @@
 
 <odoo>
-    <data noupdate="0">
+    <data>
         <record id="destino_espana" model="svl_agenciaviajes.destino">
             <field name="continente">Europa</field>
             <field name="pais">España</field>
@@ -166,6 +166,8 @@
             <field name="destino_id" ref="destino_eeuu_ny"/>
             <field name="cliente_id" ref="cliente_demo_maria"/>
             <field name="temporada_id" ref="temporada_alta"/>
-            </record>
+            <field name="fecha_inicio" eval="(datetime.now() + relativedelta(days=60)).strftime('%Y-%m-%d')"/>
+            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=67)).strftime('%Y-%m-%d')"/>
+        </record>
     </data>
 </odoo>
