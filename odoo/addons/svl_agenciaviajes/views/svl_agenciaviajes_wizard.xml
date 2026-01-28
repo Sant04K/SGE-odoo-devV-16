@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_svl_agenciaviajes_wizard_tree" model="ir.ui.view">
+        <record id="svl_agenciaviajes_wizard_tree" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.wizard.tree</field>
             <field name="model">svl_agenciaviajes.wizard</field> <field name="arch" type="xml">
                 <tree>

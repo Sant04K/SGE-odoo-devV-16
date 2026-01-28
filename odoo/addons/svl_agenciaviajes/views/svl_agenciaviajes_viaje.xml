@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_svl_agenciaviajes_viaje_tree" model="ir.ui.view">
+        <record id="svl_agenciaviajes_viaje_tree" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.viaje</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
@@ -18,7 +18,7 @@
             </field>
         </record>
 
-        <record id="view_svl_agenciaviajes_viaje_kanban" model="ir.ui.view">
+        <record id="svl_agenciaviajes_viaje_kanban" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.viaje.kanban</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">
@@ -65,7 +65,7 @@
             </field>
         </record>
 
-        <record id="view_svl_agenciaviajes_viaje_form" model="ir.ui.view">
+        <record id="svl_agenciaviajes_viaje_form" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.viaje.form</field>
             <field name="model">svl_agenciaviajes.viaje</field>
             <field name="arch" type="xml">

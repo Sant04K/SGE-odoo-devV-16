@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_svl_agenciaviajes_destino_tree" model="ir.ui.view">
+        <record id="svl_agenciaviajes_destino_tree" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.destino</field>
             <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">
@@ -14,7 +14,7 @@
             </field>
         </record>
 
-        <record id="view_svl_agenciaviajes_destino_form" model="ir.ui.view">
+        <record id="svl_agenciaviajes_destino_form" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.destino.form</field>
             <field name="model">svl_agenciaviajes.destino</field>
             <field name="arch" type="xml">

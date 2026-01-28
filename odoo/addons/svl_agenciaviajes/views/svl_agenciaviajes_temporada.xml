@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_svl_agenciaviajes_temporada_tree" model="ir.ui.view">
+        <record id="svl_agenciaviajes_temporada_tree" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.temporada</field>
             <field name="model">svl_agenciaviajes.temporada</field>
             <field name="arch" type="xml">
@@ -11,7 +11,7 @@
             </field>
         </record>
 
-        <record id="view_svl_agenciaviajes_temporada_form" model="ir.ui.view">
+        <record id="svl_agenciaviajes_temporada_form" model="ir.ui.view">
             <field name="name">svl_agenciaviajes.temporada.form</field>
             <field name="model">svl_agenciaviajes.temporada</field>
             <field name="arch" type="xml">
