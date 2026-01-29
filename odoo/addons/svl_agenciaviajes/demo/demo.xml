@@ -1,6 +1,6 @@
 
 <odoo>
-    <data>
+    <data noupdate="0">
         <record id="destino_espana" model="svl_agenciaviajes.destino">
             <field name="continente">Europa</field>
             <field name="pais">España</field>
@@ -136,8 +136,7 @@
             <field name="destino_id" ref="destino_italia"/> 
             <field name="cliente_id" ref="cliente_demo_kenji"/> 
             <field name="temporada_id" ref="temporada_alta"/> 
-            <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=15)).strftime('%Y-%m-%d')"/>
-            <field name="fecha_fin" eval="(datetime.now() - relativedelta(days=10)).strftime('%Y-%m-%d')"/>
+
         </record>
 
         <record id="viaje_demo_tokio" model="svl_agenciaviajes.viaje">
@@ -146,8 +145,7 @@
             <field name="destino_id" ref="destino_japon"/>
             <field name="cliente_id" ref="cliente_demo_maria"/>
             <field name="temporada_id" ref="temporada_oportunidad"/>
-            <field name="fecha_inicio" eval="(datetime.now() - relativedelta(days=2)).strftime('%Y-%m-%d')"/>
-            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=5)).strftime('%Y-%m-%d')"/>
+
         </record>
 
         <record id="viaje_demo_madrid" model="svl_agenciaviajes.viaje">
@@ -156,8 +154,7 @@
             <field name="destino_id" ref="destino_espana"/>
             <field name="cliente_id" ref="cliente_demo_john"/>
             <field name="temporada_id" ref="temporada_baja"/>
-            <field name="fecha_inicio" eval="(datetime.now() + relativedelta(days=30)).strftime('%Y-%m-%d')"/>
-            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=35)).strftime('%Y-%m-%d')"/>
+
         </record>
 
         <record id="viaje_demo_nueva_york" model="svl_agenciaviajes.viaje">
@@ -166,8 +163,7 @@
             <field name="destino_id" ref="destino_eeuu_ny"/>
             <field name="cliente_id" ref="cliente_demo_maria"/>
             <field name="temporada_id" ref="temporada_alta"/>
-            <field name="fecha_inicio" eval="(datetime.now() + relativedelta(days=90)).strftime('%Y-%m-%d')"/>
-            <field name="fecha_fin" eval="(datetime.now() + relativedelta(days=95)).strftime('%Y-%m-%d')"/>
+
         </record>
     </data>
 </odoo>
