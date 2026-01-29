@@ -31,11 +31,13 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
         'views/svl_agenciaviajes_viaje.xml',
         'views/svl_agenciaviajes_destino.xml',
         'views/svl_agenciaviajes_temporada.xml',
-        'views/svl_agenciaviajes_menu.xml',
         'views/svl_agenciaviajes_cliente.xml',
 
     #Wizard
         'views/svl_agenciaviajes_wizard.xml',
+
+    #Menu
+        'views/svl_agenciaviajes_menu.xml',
 
     #Informes
         'reports/report_cliente.xml',
@@ -43,7 +45,7 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo_data.xml',
+        'demo/demo.xml',
     ],
     'application': True,
 }
