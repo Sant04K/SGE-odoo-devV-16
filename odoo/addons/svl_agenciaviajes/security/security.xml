@@ -22,5 +22,9 @@
             ]"/>    
         </record>
 
+        <record id="base.group_user" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('svl_agenciaviajes.grupo_agencia_usuario'))]"/>
+        </record>
+
     </data>
 </odoo>
