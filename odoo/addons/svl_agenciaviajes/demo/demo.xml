@@ -1,6 +1,6 @@
 
 <odoo>
-    <data noupdate="0">
+    <data>
         <record id="destino_espana" model="svl_agenciaviajes.destino">
             <field name="continente">Europa</field>
             <field name="pais">España</field>
@@ -69,13 +69,6 @@
             <field name="pais">Japón</field>
             <field name="name">Tokio</field>
             <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/tokio.jpg"/>
-        </record>
-
-        <record id="destino_china" model="svl_agenciaviajes.destino">
-            <field name="continente">Asia</field>
-            <field name="pais">China</field>
-            <field name="name">Pekín</field>
-            <field name="imagen" type="base64" file="svl_agenciaviajes/demo/images/pekin.jpg"/>
         </record>
 
         <record id="temporada_alta" model="svl_agenciaviajes.temporada">
