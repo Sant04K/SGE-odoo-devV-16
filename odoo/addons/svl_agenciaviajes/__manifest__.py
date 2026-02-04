@@ -26,20 +26,19 @@ Gestiona una agencia de viajes, permitiendo llevar el control de los clientes, v
         'security/security.xml',
         'security/ir.model.access.csv',
         
-
-    #Importante que el "menus.xml" esté antes que las vistas para que se creen los menús correctamente
+    # Vistas
         'views/svl_agenciaviajes_viaje.xml',
         'views/svl_agenciaviajes_destino.xml',
         'views/svl_agenciaviajes_temporada.xml',
         'views/svl_agenciaviajes_cliente.xml',
 
-    #Wizard
+    # Wizard
         'views/svl_agenciaviajes_wizard.xml',
 
-    #Menu
+    # Menu
         'views/svl_agenciaviajes_menu.xml',
 
-    #Informes
+    # Informes
         'reports/report_cliente.xml',
 
     ],
